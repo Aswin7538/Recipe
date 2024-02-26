@@ -1,0 +1,90 @@
+.background-container {
+    height: 600px; 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .overlay-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    color: white;
+  }
+  
+  .overlay-text h1 {
+    font-size: 2.5em; 
+    font-weight: bold;
+  }
+  
+  .overlay-text p {
+    font-size: 1.2em; 
+  }
+  .cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+
+  .main{
+    background-color: #FFF;
+  }
+  .main h1{
+      color: #101920;
+      font-family: "Protest Riot", sans-serif;
+      font-weight: 400;
+     padding-top: 2rem;
+      
+  
+  
+  
+  }
+  .main .card{
+      background-color: #F06D26;
+      color: #fff;
+      box-shadow: 2px 3px 4px 3px black;
+  }
+  .image-card {
+      transition: transform 0.3s;
+      border-bottom: 1px solid white;
+  }
+  .image-card :hover{
+      transform: scale(1,1);
+  }
+  .main button{
+      background-color:#101920;
+      color: #fff;
+      border: none;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1rem;
+      margin-inline-start: 46%;
+      border-radius: 10px;
+  }
+  @keyframes spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 10px solid #f3f3f3; 
+      border-top: 10px solid #383636; 
+      border-radius: 50%;
+      animation: spinner 1.5s linear infinite;
+    }
+    .error-fav{
+      font-family: "Protest Riot", sans-serif;
+      font-size: 3rem;
+      margin-top: 5rem;
+    }
+    
+  
