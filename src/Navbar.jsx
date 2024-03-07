@@ -1,8 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Main } from './Main';
+
 import './Nav.css'
+import { Outlet } from 'react-router-dom';
 
 
 function BasicExample() {
@@ -14,10 +15,12 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto" style={{fontWeight:'bolder',}}>
            
-            <Nav.Link href="#home">HOME</Nav.Link>
-            <Nav.Link href="#link">ALL ITEM</Nav.Link>
-            <Nav.Link href="#home">FAVOURITE</Nav.Link>
-            <Nav.Link href="#link">COUNTRY</Nav.Link>
+            <Nav.Link href='/Main'>HOME</Nav.Link>
+            <Nav.Link href='/Catogory'>CATOGORIES</Nav.Link>
+            <Nav.Link href='/Allitem'>ALL ITEM</Nav.Link>
+            <Nav.Link href='/Fav'>FAVOURITE</Nav.Link>
+            <Nav.Link href='/Country'>COUNTRY</Nav.Link>
+           
 
       
 
@@ -27,7 +30,8 @@ function BasicExample() {
       </Container>
     </Navbar>
 
-    <Main/>
+   
+    <Outlet/>
     </div>
   );
 }
