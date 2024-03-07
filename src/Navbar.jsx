@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import './Nav.css'
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 
 function BasicExample() {
@@ -15,12 +15,12 @@ function BasicExample() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto" style={{fontWeight:'bolder',}}>
            
-            <Nav.Link href='/Main'>HOME</Nav.Link>
-            <Nav.Link href='/Catogory'>CATOGORIES</Nav.Link>
-            <Nav.Link href='/Allitem'>ALL ITEM</Nav.Link>
-            <Nav.Link href='/Fav'>FAVOURITE</Nav.Link>
-            <Nav.Link href='/Country'>COUNTRY</Nav.Link>
            
+          <Nav.Link as={Link} to='/Main'>HOME</Nav.Link>
+<Nav.Link as={Link} to='/Catogory'>CATEGORIES</Nav.Link>
+<Nav.Link as={Link} to='/AllItem'>ALL ITEM</Nav.Link>
+<Nav.Link as={Link} to='/Fav'>FAVOURITE</Nav.Link>
+<Nav.Link as={Link} to='/Country'>COUNTRY</Nav.Link>
 
       
 
